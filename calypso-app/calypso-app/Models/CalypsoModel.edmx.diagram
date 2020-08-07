@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c84d42898ae64465bdf6348b2e2ddf96" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.almacenamiento" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.categoria" Width="1.5" PointX="0.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.cliente" Width="1.5" PointX="3.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.detalle_venta" Width="1.5" PointX="8.25" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.empleado" Width="1.5" PointX="3.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.fuente_poder" Width="1.5" PointX="5.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.gabinete" Width="1.5" PointX="5.25" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.inventario" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.marca" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.memoria_ram" Width="1.5" PointX="8.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.paquete_ensamble" Width="1.5" PointX="10.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.procesador" Width="1.5" PointX="8.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.proveedor" Width="1.5" PointX="3.75" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.tarjeta_madre" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.tarjeta_video" Width="1.5" PointX="5.25" PointY="38.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.tipo_almacenamiento" Width="1.5" PointX="3" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.tipo_memoria" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.tipo_socket" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.usuario" Width="1.5" PointX="1.5" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.venta" Width="1.5" PointX="6" PointY="28.125" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Almacenamiento_Ensamble" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Almacenamiento_Inventario" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tipo_Almacenamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Categoria_Inventario" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Cliente_Venta" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Usuario_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Inventario_DetalleVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Venta_DetalleVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Empleado_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Usuario_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_FuentePoder_Ensamble" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Inventario_Fuente" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Gabinete_Ensamble" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Inventario_Gabinete" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Inventario_Madre" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Inventario_Procesador" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Inventario_Ram" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Inventario_Video" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Marca_Inventario" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Ram_Ensamble" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TipoMemoria_Ram" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Procesador_Ensamble" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TarjetaMadre_Ensamble" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TarjetaVideo_Ensamble" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TipoMemoria_Procesador" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TipoSocket_Procesador" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Usuario_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TipoMemoria_TarjetaMadre" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TipoSocket_TarjetaMadre" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

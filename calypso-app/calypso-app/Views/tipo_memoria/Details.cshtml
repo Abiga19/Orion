@@ -1,0 +1,35 @@
+﻿@model calypso_app.Models.tipo_memoria
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tipo_memoria</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion_tipomemoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion_tipomemoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estatus_tipomemoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estatus_tipomemoria)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_tipomemoria }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
